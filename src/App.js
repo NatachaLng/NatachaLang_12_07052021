@@ -2,6 +2,8 @@ import React from "react";
 import Header from "./components/Header";
 import './styles/Header.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import ErrorPage from "./components/ErrorPage";
+import UserPage from "./components/UserPage";
 
 
 class App extends React.Component {
@@ -11,7 +13,7 @@ class App extends React.Component {
           <div>
             <Header/>
             <Switch>
-
+                <Route exact component={UserPage} />
             </Switch>
           </div>
         </BrowserRouter>

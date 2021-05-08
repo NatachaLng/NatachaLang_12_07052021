@@ -9,14 +9,16 @@ class Nav extends React.Component{
     render() {
         return(
             <nav>
-                <div>
-                    <img path="/user" title="User Link" src={menu1} />
-                    <img path="/user" title="User Link" src={menu2} />
-                    <img path="/user" title="User Link" src={menu3} />
-                    <img path="/user" title="User Link" src={menu4} />
+                <div className="nav-flex">
+                    <div className='nav-img'><img path="/user" title="User Link" src={menu1} /></div>
+                    <div className='nav-img'><img path="/user" title="User Link" src={menu2} /></div>
+                    <div className='nav-img'><img path="/user" title="User Link" src={menu3} /></div>
+                    <div className='nav-img'><img path="/user" title="User Link" src={menu4} /></div>
+                    <div className='copyright'>Copyright, SportSee 2020</div>
                 </div>
-                <div className='copyright'>Copyright, SportSee 2020</div>
             </nav>
         )
     }
 }
+
+export default Nav
