@@ -1,10 +1,10 @@
 .container{
     display: grid;
-    grid-template-areas: "header header header right"
-                       "top top top right"
-                       "top top top right"
-                        "bottom bottom bottom right"
-                        "bottom bottom bottom right";
+    grid-template-areas: "header header right"
+                       "top top right"
+                       "top top right"
+                        "bottom bottom right"
+                        "bottom bottom right";
     position: absolute;
     top: 110px;
     left: 190px;
@@ -24,10 +24,15 @@
     grid-area: bottom;
     display: flex;
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 30px;
     width: 100%;
     min-width: 720px;
     height: 35%;
+}
+
+.bottom-graph{
+    max-width: 220px;
+    max-height: 220px;
 }
 
 .right-container{

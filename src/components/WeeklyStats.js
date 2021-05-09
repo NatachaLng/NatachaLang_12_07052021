@@ -61,9 +61,9 @@ class WeeklyStats extends React.Component {
 
     render() {
         return (
-            <div className="weekly-stats">
+            <div className="weekly-stats bottom-graph">
                 <h2 className="weekly-stats-title">Durée moyenne des sessions</h2>
-=                <LineChart data={this.newData} width={250} height={200}
+=                <LineChart data={this.newData} width={250} height={210}
                             margin={{top: 5, right: 30, left: 0, bottom: 40}}>
                     <Line type="monotone" dataKey="sessionLength" stroke="#FFFFFF" strokeWidth={2} dot={false}
                           activeDot={{stroke: "#FF0000", r: 5}} />

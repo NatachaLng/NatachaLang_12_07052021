@@ -13,14 +13,14 @@ class Score extends React.Component {
     render() {
 
         return (
-            <div className="score">
+            <div className="score bottom-graph">
                 <h2 className="percentage-title-text">Score</h2>
                 <p className="percentage-text">{this.data[0].percentage}%
                     <br />
                     <span className="percentage-text-desc">de votre objectif</span>
                 </p>
                 <div className="inner-circle"></div>
-                    <RadialBarChart cx="50%" cy="55%" innerRadius="70%" height={200} width={200}
+                    <RadialBarChart cx="50%" cy="55%" innerRadius="70%" height={250} width={250}
                                     outerRadius="80%" barSize={16} data={this.data} startAngle={90} endAngle={450} >
                         <PolarAngleAxis type="number" domain={[0, 100]} angleAxisId={0} tick={false} />
                         <RadialBar minAngle={15} dataKey="percentage" cornerRadius={50} />

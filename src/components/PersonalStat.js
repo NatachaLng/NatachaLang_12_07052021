@@ -5,7 +5,7 @@ import '../styles/PersonalStat.css'
 class PersonalStat extends React.Component {
     render() {
         return (
-            <div className="personal-stat">
+            <div className="personal-stat bottom-graph">
                 <img className="personal-stat-icon" src={this.props.icon} alt='' />
                 <div className="personal-stat-text">
                     <p className="personal-stat-text-numbers">{this.props.data}{this.props.unit}</p>
