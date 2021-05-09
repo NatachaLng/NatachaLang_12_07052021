@@ -5,7 +5,8 @@ import Nav from "./Nav";
 import WelcomeMessage from "./WelcomeMessage";
 import DailyActivity from "./DailyActivity";
 import WeeklyStats from "./WeeklyStats";
-import Performance from "./Performance";
+import ActivityRadar from "./ActivityRadar";
+import Score from "./Score";
 
 class UserPage extends React.Component{
     constructor(props) {
@@ -68,7 +69,8 @@ class UserPage extends React.Component{
                         { this.state.activityLoaded ? <DailyActivity data={this.state.activity.sessions} /> : "" }
                         <div className="bottom-container">
                             { this.state.averageLoaded ? <WeeklyStats data={this.state.average.sessions} /> : "" }
-                            { this.state.performanceLoaded ? <Performance data={this.state.performance.data} /> : "" }
+                            { this.state.performanceLoaded ? <ActivityRadar data={this.state.performance.data} /> : "" }
+                            { this.state.performanceLoaded ? <Score data={this.state.data} /> : "" }
                         </div>
                     </div>
                 </div>

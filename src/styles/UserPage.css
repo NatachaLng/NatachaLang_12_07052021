@@ -8,6 +8,7 @@
 
 .bottom-container{
     display: flex;
+    justify-content: space-between;
     margin-top: 15px;
     width: 720px;
     height: 210px;

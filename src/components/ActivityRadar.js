@@ -1,10 +1,10 @@
 import React from 'react';
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
-import '../styles/Performance.css'
+import '../styles/ActivityRadar.css'
 import PropTypes from 'prop-types';
 
 
-class Performance extends React.Component {
+class ActivityRadar extends React.Component {
     constructor(props) {
         super(props);
         this.data = this.props.data;
@@ -36,7 +36,7 @@ class Performance extends React.Component {
     }
     render () {
         return (
-            <div className="performance">
+            <div className="activity-radar">
                     <RadarChart cx="50%" cy="50%" outerRadius="65%" data={this.newData} width={216} height={210}
                                 margin={{top: 5, right: 20, left: 0, bottom: 5}}>
                         <PolarGrid />
@@ -48,8 +48,8 @@ class Performance extends React.Component {
     }
 }
 
-export default Performance;
+export default ActivityRadar;
 
-Performance.propTypes = {
+ActivityRadar.propTypes = {
     data: PropTypes.array
 };

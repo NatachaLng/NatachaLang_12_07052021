@@ -1,0 +1,30 @@
+import React from 'react';
+import { RadialBarChart, RadialBar, PolarAngleAxis, ResponsiveContainer } from 'recharts';
+import '../styles/Score.css'
+import PropTypes from 'prop-types';
+
+class Score extends React.Component {
+    constructor(props) {
+        super(props);
+        this.data = this.props.data.todayScore*100
+    }
+    render() {
+
+        return (
+            <div className="score">
+                <h2 className="percentage-title-text">Score</h2>
+                <p className="percentage-text">{this.data}%
+                    <br />
+                    <span className="percentage-text-desc">de votre objectif</span>
+                </p>
+                <div className="inner-circle"></div>
+                    <RadialBarChart cx="50%" cy="55%" innerRadius="70%" height={200} width={200}
+                                    outerRadius="80%" barSize={16} data={this.data} startAngle={90} endAngle={450} >
+                        <PolarAngleAxis type="number" domain={[0, 100]} angleAxisId={0} tick={false} />
+                        <RadialBar minAngle={15} dataKey="percentage" cornerRadius={50} />
+                    </RadialBarChart>
+            </div>
+        )
+    }
+}
+export default Score;
