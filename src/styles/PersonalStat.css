@@ -1,12 +1,13 @@
 .personal-stat {
     width: 80%;
     max-width: 250px;
-    height: 124px;
+    height: 125px;
     background-color: #FBFBFB;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .personal-stat-icon {
@@ -15,17 +16,16 @@
 }
 
 .personal-stat-text {
-    margin-left: 1em;
+    margin-left: 14px;
 }
 
 .personal-stat-text-numbers {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: bold;
     margin-bottom: 0;
 }
 
 .personal-stat-text-title {
     font-size: 14px;
-    font-weight: 500;
     margin-top: 0;
 }

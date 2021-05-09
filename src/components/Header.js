@@ -9,26 +9,26 @@ class Header extends React.Component {
             <header>
                 <div className="main-header">
                     <NavLink to='/'><img src={logo} className="logo" alt="Sportsee"/></NavLink>
-                        <NavLink to='/'>
-                            <div className="navlink">
-                                Accueil
-                            </div>
-                        </NavLink>
-                        <NavLink to='/'>
-                            <div className="navlink">
-                                Profil
-                            </div>
-                        </NavLink>
-                        <NavLink to='/'>
-                            <div className="navlink">
-                                Réglage
-                            </div>
-                        </NavLink>
-                        <NavLink to='/'>
-                            <div className="navlink">
-                                Communauté
-                            </div>
-                        </NavLink>
+                    <NavLink to='/'>
+                        <div className="navlink">
+                            Accueil
+                        </div>
+                    </NavLink>
+                    <NavLink to='/'>
+                        <div className="navlink">
+                            Profil
+                        </div>
+                    </NavLink>
+                    <NavLink to='/'>
+                        <div className="navlink">
+                            Réglage
+                        </div>
+                    </NavLink>
+                    <NavLink to='/'>
+                        <div className="navlink">
+                            Communauté
+                        </div>
+                    </NavLink>
                 </div>
             </header>
         );
