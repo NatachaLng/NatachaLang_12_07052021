@@ -24,6 +24,7 @@ class DailyActivity extends React.Component {
         return (
             <div className="daily-container">
                 <h2 className="daily-title">Activité quotidienne</h2>
+                <ResponsiveContainer width="100%" height="100%">
                     <BarChart width={850} height={220} data={newData}
                               margin={{top: 5, right: 30, left: 20, bottom: 40}}>
                         <CartesianGrid vertical={false} />
@@ -34,6 +35,7 @@ class DailyActivity extends React.Component {
                         <Bar name="Poids (kg)" dataKey="kilogram" fill="#282D30" radius={[10, 10, 0, 0]} barSize={10} barGap={5} />
                         <Bar name="Calories brûlées (kCal)" dataKey="calories" fill="#E60000" radius={[10, 10, 0, 0]} barSize={10} barGap={5} />
                     </BarChart>
+                </ResponsiveContainer>
             </div>
         )
     }
