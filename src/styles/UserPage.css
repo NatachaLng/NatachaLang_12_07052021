@@ -5,3 +5,10 @@
     width: calc(100% - 260px);
     height: calc(100% - 160px);
 }
+
+.bottom-container{
+    display: flex;
+    margin-top: 15px;
+    width: 720px;
+    height: 210px;
+}

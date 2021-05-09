@@ -1,0 +1,32 @@
+.weekly-stats {
+    background-color: red;
+    width: 30%;
+    height: 100%;
+    position: relative;
+    border-radius: 5px;
+}
+
+.weekly-stats-title {
+    width: 60%;
+    font-size: 1.1em;
+    font-weight: 300;
+    color: white;
+    position: absolute;
+    left: 1em;
+}
+
+.custom-tooltip-average {
+    background-color: red;
+    background-color: white;
+}
+
+.custom-tooltip-average-text {
+    font-size: 12px;
+    padding: .5em;
+}
+
+@media all and (max-width: 1024px) {
+    .average-stat-label {
+        font-size: 0.8em;
+    }
+}
