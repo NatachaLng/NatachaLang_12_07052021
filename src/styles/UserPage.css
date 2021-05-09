@@ -1,27 +1,40 @@
 .container{
-    display: flex;
+    display: grid;
+    grid-template-areas: "header header header right"
+                       "top top top right"
+                       "top top top right"
+                        "bottom bottom bottom right"
+                        "bottom bottom bottom right";
     position: absolute;
     top: 110px;
     left: 190px;
     width: calc(100% - 260px);
-    height: calc(100% - 160px);
+    height: calc(100% - 130px);
 }
 
-.left-container{
-    width: 60%;
-    min-width: 700px;
+.header_home{
+    grid-area: header;
 }
 
+.top-container{
+    grid-area: top;
+}
 
 .bottom-container{
+    grid-area: bottom;
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
     width: 100%;
     min-width: 720px;
-    height: 210px;
+    height: 35%;
 }
 
 .right-container{
-    width: 30%;
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: right;
+    align-items: flex-end;
 }

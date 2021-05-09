@@ -1,13 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, Tooltip} from 'recharts';
 import '../styles/WeeklyStats.css'
-import PropTypes from 'prop-types';
 
-/** @function CustomToolTip
- * Function to create custom styled ToolTip for Rechart element.
- * @param active - tooltip active/inactive
- * @param payload - value of the object
- */
 const CustomToolTip = ({ active, payload, label}) => {
     if (active && payload && payload.length) {
         return (
