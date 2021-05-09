@@ -13,8 +13,7 @@ class App extends React.Component {
           <div>
             <Header/>
             <Switch>
-                <Route exact path="/:id" component={UserPage} />
-                <Route path="*" component={ErrorPage} />
+                <Route exact path="/user/:id" component={UserPage} />
             </Switch>
           </div>
         </BrowserRouter>

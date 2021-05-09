@@ -1,6 +1,6 @@
 import React from "react";
 import '../styles/UserPage.css'
-import {fetchData} from "../service/fetch";
+import fetchData from "../service/fetch";
 import Nav from "./Nav";
 import WelcomeMessage from "./WelcomeMessage";
 import ErrorPage from "./ErrorPage";
@@ -12,41 +12,61 @@ class UserPage extends React.Component{
             error: null,
             dataLoaded: false,
             data: [],
+            activityLoaded: false,
+            activity: [],
+            averageLoaded: false,
+            average: [],
+            performanceLoaded: false,
+            performance: []
         };
     }
 
     componentDidMount() {
-        const userId = this.props.match.params.userId;
-
-        //fetch user's data
+        const userId = this.props.match.params.id;
         fetchData(userId, "")
             .then(data => {
                 this.setState({
                     dataLoaded: true,
-                    data: data
+                    data: data,
+
+                })
+            })
+
+        fetchData(userId, "activity")
+            .then(data => {
+                this.setState({
+                    activityLoaded: true,
+                    activity: data
+                })
+            })
+
+        fetchData(userId, "average-sessions")
+            .then(data => {
+                this.setState({
+                    averageLoaded: true,
+                    average: data
+                })
+            })
+
+        fetchData(userId, "performance")
+            .then(data => {
+                this.setState({
+                    performanceLoaded: true,
+                    performance: data
                 })
             })
     }
 
     render() {
-        /**
-         * take error and isLoaded status from the current state */
-        const {error} = this.state;
-        /**
-         * if error condition is true, show error page */
-        if (error) {
-            return <ErrorPage />
-        }
-        /**
-         * if all API returned OK, render the full content. Add props for each corresponding components from the current state */
-        else {
-            return (
+        return(
                 <div id="main">
-                    { this.state.dataLoaded ? <WelcomeMessage user={this.state.data.userInfos} /> : "" }
+                    <Nav />
+                    <div className='container'>
+                    { this.state.dataLoaded ? <WelcomeMessage firstName={this.state.data.userInfos.firstName} /> : "" }
+                    </div>
                 </div>
             )
         }
-    }
 }
 
 export default UserPage

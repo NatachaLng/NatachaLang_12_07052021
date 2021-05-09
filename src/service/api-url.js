@@ -1,1 +1,0 @@
-export const database = "http://localhost:5000/user";
