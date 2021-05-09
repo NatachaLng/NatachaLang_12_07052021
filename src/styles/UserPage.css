@@ -1,3 +1,6 @@
+*{
+ font-family: Roboto, "Segoe UI", SansSerif;
+}
 .container{
     display: grid;
     grid-template-areas: "header header right"

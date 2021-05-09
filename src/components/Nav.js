@@ -1,8 +1,8 @@
 import React from "react";
-import menu1 from '../assets/menu-1.JPG';
-import menu2 from '../assets/menu-2.JPG';
-import menu3 from '../assets/menu-3.JPG';
-import menu4 from '../assets/menu-4.JPG';
+import yoga from '../assets/yoga.JPG';
+import swimming from '../assets/swimming.JPG';
+import running from '../assets/running.JPG';
+import weight from '../assets/weight.JPG';
 import '../styles/Nav.css'
 
 class Nav extends React.Component{
@@ -10,10 +10,10 @@ class Nav extends React.Component{
         return(
             <nav>
                 <div className="nav-flex">
-                    <div className='nav-img'><img path="/user" title="User Link" src={menu1} /></div>
-                    <div className='nav-img'><img path="/user" title="User Link" src={menu2} /></div>
-                    <div className='nav-img'><img path="/user" title="User Link" src={menu3} /></div>
-                    <div className='nav-img'><img path="/user" title="User Link" src={menu4} /></div>
+                    <div className='nav-img' alt={yoga}><img path="/user" title="User Link" src={yoga} /></div>
+                    <div className='nav-img' alt={swimming}><img path="/user" title="User Link" src={swimming} /></div>
+                    <div className='nav-img' alt={running}><img path="/user" title="User Link" src={running} /></div>
+                    <div className='nav-img' alt={weight}><img path="/user" title="User Link" src={weight} /></div>
                     <div className='copyright'>Copyright, SportSee 2020</div>
                 </div>
             </nav>
