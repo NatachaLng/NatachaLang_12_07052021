@@ -24,9 +24,3 @@
     font-size: 12px;
     padding: .5em;
 }
-
-@media all and (max-width: 1024px) {
-    .average-stat-label {
-        font-size: 0.8em;
-    }
-}

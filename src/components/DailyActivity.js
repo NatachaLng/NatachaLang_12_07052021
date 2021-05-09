@@ -22,8 +22,8 @@ class DailyActivity extends React.Component {
         const newData = data.map(weekDay => ({number: data.indexOf(weekDay)+1 ,...weekDay}));
 
         return (
-            <div className="chart-parent">
-                <h2 className="chart-title">Activité quotidienne</h2>
+            <div className="daily-container">
+                <h2 className="daily-title">Activité quotidienne</h2>
                     <BarChart width={850} height={220} data={newData}
                               margin={{top: 5, right: 30, left: 20, bottom: 40}}>
                         <CartesianGrid vertical={false} />
