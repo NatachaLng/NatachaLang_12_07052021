@@ -1,5 +1,5 @@
 import React from 'react';
-import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer} from 'recharts';
+import { LineChart, Line, XAxis, Tooltip} from 'recharts';
 import '../styles/WeeklyStats.css'
 
 const CustomToolTip = ({ active, payload, label}) => {
@@ -63,7 +63,6 @@ class WeeklyStats extends React.Component {
         return (
             <div className="weekly-stats bottom-graph">
                 <h2 className="weekly-stats-title">Durée moyenne des sessions</h2>
-                <ResponsiveContainer width="100%" height="100%">
 =                <LineChart data={this.newData} width={250} height={210}
                             margin={{top: 5, right: 30, left: 0, bottom: 40}}>
                     <Line type="monotone" dataKey="sessionLength" stroke="#FFFFFF" strokeWidth={2} dot={false}
@@ -72,7 +71,6 @@ class WeeklyStats extends React.Component {
                            tick={{fill: "white", fontSize: "12", dy: 20}} />
                     <Tooltip content={<CustomToolTip/>} position={{y: 60}} />
                 </LineChart>
-                </ResponsiveContainer>
             </div>
         )
     }

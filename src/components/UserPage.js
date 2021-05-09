@@ -36,6 +36,7 @@ class UserPage extends React.Component {
                 this.setState({
                     dataLoaded: true,
                     data: data,
+
                 })
             })
 
@@ -43,7 +44,7 @@ class UserPage extends React.Component {
             .then(data => {
                 this.setState({
                     activityLoaded: true,
-                    activity: data,
+                    activity: data
                 })
             })
 
@@ -51,7 +52,7 @@ class UserPage extends React.Component {
             .then(data => {
                 this.setState({
                     averageLoaded: true,
-                    average: data,
+                    average: data
                 })
             })
 
@@ -59,7 +60,7 @@ class UserPage extends React.Component {
             .then(data => {
                 this.setState({
                     performanceLoaded: true,
-                    performance: data,
+                    performance: data
                 })
             })
     }
@@ -101,4 +102,4 @@ class UserPage extends React.Component {
     }
 }
 
-export default UserPage;
+export default UserPage

@@ -1,4 +1,4 @@
-.dailyactivity-container {
+.chart-parent {
     width: 100%;
     max-height: 200px;
     background-color: #FBFBFB;
@@ -6,17 +6,18 @@
     border-radius: 5px;
 }
 
-.dailyactivity-title {
-    font-size: 14px;
+.chart-title {
+    font-size: 15px;
     margin-left: 20px;
     margin-bottom: 0;
 }
 
 .recharts-default-legend {
-    margin-top: -25px! important;
+    margin: unset;
+    margin-top: -25px!important;
 }
 
-.recharts-legend-item {
+.recharts-legend-item-text {
     font-size: 14px;
 }
 
@@ -24,9 +25,9 @@
     background-color: red;
     color: white;
     text-align: center;
-    padding: 5px;
-    line-height: 15px;
-    margin-left: 10px;
+    padding: .1em 1em;
+    line-height: 2em;
+    margin-left: 2em;
 }
 
 .custom-tooltip-text {
