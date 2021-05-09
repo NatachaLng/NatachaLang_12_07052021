@@ -65,12 +65,17 @@ class UserPage extends React.Component{
                 <div id="main">
                     <Nav />
                     <div className='container'>
+                        <div className='left-container'>
                     { this.state.dataLoaded ? <WelcomeMessage firstName={this.state.data.userInfos.firstName} /> : "" }
                         { this.state.activityLoaded ? <DailyActivity data={this.state.activity.sessions} /> : "" }
                         <div className="bottom-container">
                             { this.state.averageLoaded ? <WeeklyStats data={this.state.average.sessions} /> : "" }
                             { this.state.performanceLoaded ? <ActivityRadar data={this.state.performance.data} /> : "" }
                             { this.state.performanceLoaded ? <Score data={this.state.data} /> : "" }
+                        </div>
+                        </div>
+                        <div className='right-container'>
+
                         </div>
                     </div>
                 </div>

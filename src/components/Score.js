@@ -6,14 +6,17 @@ import PropTypes from 'prop-types';
 class Score extends React.Component {
     constructor(props) {
         super(props);
-        this.data = this.props.data.todayScore*100
+        this.data = [{
+            percentage: this.props.data.todayScore*100,
+            fill: '#FF0000',
+        }]
     }
     render() {
 
         return (
             <div className="score">
                 <h2 className="percentage-title-text">Score</h2>
-                <p className="percentage-text">{this.data}%
+                <p className="percentage-text">{this.data[0].percentage}%
                     <br />
                     <span className="percentage-text-desc">de votre objectif</span>
                 </p>

@@ -24,7 +24,7 @@ class DailyActivity extends React.Component {
         return (
             <div className="chart-parent">
                 <h2 className="chart-title">Activité quotidienne</h2>
-                    <BarChart width={700} height={250} data={newData}
+                    <BarChart width={720} height={250} data={newData}
                               margin={{top: 5, right: 30, left: 20, bottom: 40}}>
                         <CartesianGrid vertical={false} />
                         <XAxis dataKey="number" />
