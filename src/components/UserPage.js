@@ -4,6 +4,7 @@ import fetchData from "../service/fetch";
 import Nav from "./Nav";
 import WelcomeMessage from "./WelcomeMessage";
 import ErrorPage from "./ErrorPage";
+import DailyActivity from "./DailyActivity";
 
 class UserPage extends React.Component{
     constructor(props) {
@@ -63,6 +64,7 @@ class UserPage extends React.Component{
                     <Nav />
                     <div className='container'>
                     { this.state.dataLoaded ? <WelcomeMessage firstName={this.state.data.userInfos.firstName} /> : "" }
+                        { this.state.activityLoaded ? <DailyActivity data={this.state.activity.sessions} /> : "" }
                     </div>
                 </div>
             )

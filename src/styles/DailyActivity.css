@@ -1,0 +1,35 @@
+.chart-parent {
+    width: 50%;
+    height: 30%;
+    background-color: #FBFBFB;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.chart-title {
+    font-size: 15px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+.recharts-default-legend {
+    margin: unset;
+    margin-top: -25px!important;
+}
+
+.recharts-legend-item-text {
+    font-size: 14px;
+}
+
+.custom-tooltip {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: .1em 1em;
+    line-height: 2em;
+    margin-left: 2em;
+}
+
+.custom-tooltip-text {
+    font-size: 12px;
+}
