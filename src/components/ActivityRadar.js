@@ -1,5 +1,5 @@
 import React from 'react';
-import { Radar, RadarChart, PolarGrid, PolarAngleAxis} from 'recharts';
+import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer} from 'recharts';
 import '../styles/ActivityRadar.css'
 import PropTypes from 'prop-types';
 
@@ -37,12 +37,14 @@ class ActivityRadar extends React.Component {
     render () {
         return (
             <div className="activity-radar bottom-graph">
+                <ResponsiveContainer width="100%" height="100%">
                     <RadarChart cx="50%" cy="50%" outerRadius="65%" data={this.newData} width={220} height={220}
                                 margin={{top: 5, right: 20, left: 0, bottom: 5}}>
                         <PolarGrid />
                         <PolarAngleAxis dataKey="type" tick={{fill: 'white', fontSize: '10px'}} tickLine={false} />
                         <Radar dataKey="value" fill="#FF0000" fillOpacity={0.8} />
                     </RadarChart>
+                </ResponsiveContainer>
             </div>
         )
     }
