@@ -1,8 +1,6 @@
 import React from 'react';
 import { LineChart, Line, XAxis, Tooltip, ResponsiveContainer} from 'recharts';
 import '../styles/WeeklyStats.css'
-import PropTypes from 'prop-types';
-
 
 const CustomToolTip = ({ active, payload, label}) => {
     if (active && payload && payload.length) {
@@ -81,7 +79,3 @@ class WeeklyStats extends React.Component {
 }
 
 export default WeeklyStats;
-
-WeeklyStats.propTypes = {
-    data: PropTypes.array
-};

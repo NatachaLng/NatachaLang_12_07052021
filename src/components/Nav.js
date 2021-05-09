@@ -1,8 +1,8 @@
 import React from "react";
-import yoga from '../assets/yoga.JPG';
-import swimming from '../assets/swimming.JPG';
-import running from '../assets/running.JPG';
-import weight from '../assets/weight.JPG';
+import yoga from '../assets/menu-1.JPG';
+import swimming from '../assets/menu-2.JPG';
+import running from '../assets/menu-3.JPG';
+import weight from '../assets/menu-4.JPG';
 import '../styles/Nav.css'
 
 class Nav extends React.Component {

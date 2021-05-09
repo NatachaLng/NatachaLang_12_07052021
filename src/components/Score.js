@@ -1,7 +1,6 @@
 import React from 'react';
 import { RadialBarChart, RadialBar, PolarAngleAxis, ResponsiveContainer} from 'recharts';
 import '../styles/Score.css'
-import PropTypes from 'prop-types';
 
 class Score extends React.Component {
     constructor(props) {
@@ -33,7 +32,3 @@ class Score extends React.Component {
     }
 }
 export default Score;
-
-Score.propTypes = {
-    data: PropTypes.object
-};
