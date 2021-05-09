@@ -3,11 +3,9 @@ import '../styles/UserPage.css'
 import fetchData from "../service/fetch";
 import Nav from "./Nav";
 import WelcomeMessage from "./WelcomeMessage";
-import ErrorPage from "./ErrorPage";
 import DailyActivity from "./DailyActivity";
 import WeeklyStats from "./WeeklyStats";
-import '../styles/WeeklyStats.css'
-
+import Performance from "./Performance";
 
 class UserPage extends React.Component{
     constructor(props) {
@@ -70,6 +68,7 @@ class UserPage extends React.Component{
                         { this.state.activityLoaded ? <DailyActivity data={this.state.activity.sessions} /> : "" }
                         <div className="bottom-container">
                             { this.state.averageLoaded ? <WeeklyStats data={this.state.average.sessions} /> : "" }
+                            { this.state.performanceLoaded ? <Performance data={this.state.performance.data} /> : "" }
                         </div>
                     </div>
                 </div>
