@@ -1,22 +1,36 @@
 import React from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 import PropTypes from 'prop-types';
-import '../styles/DailyActivity.css'
+import '../styles/DailyActivity.css';
 
-const CustomToolTip = ({ active, payload, label}) => {
-    if (active && payload && payload.length) {
+/**
+ *
+ * @param active (if exists)
+ * @param value
+ * @return {JSX.Element|null}
+ * @constructor
+ */
+
+const CustomToolTip = ({ active, value}) => {
+    if (active && value && value.length) {
         return (
             <div className="custom-tooltip">
-                <p className="custom-tooltip-text">{`${payload[0].value}kg`}</p>
-                <p className="custom-tooltip-text">{`${payload[1].value}kCal`}</p>
+                <p className="custom-tooltip-text">{`${value[0].value}kg`}</p>
+                <p className="custom-tooltip-text">{`${value[1].value}kCal`}</p>
             </div>
         )
     }
     return null;
 };
 
-class DailyActivity extends React.Component {
 
+/**
+ * Graph representig the activity per day
+ */
+class DailyActivity extends React.Component {
+    /**
+     * @return {JSX.Element}
+     */
     render() {
         const data = this.props.data;
         const newData = data.map(weekDay => ({number: data.indexOf(weekDay)+1 ,...weekDay}));

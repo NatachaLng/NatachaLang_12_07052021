@@ -2,11 +2,19 @@ import React from 'react';
 import { LineChart, Line, XAxis, Tooltip} from 'recharts';
 import '../styles/WeeklyStats.css'
 
-const CustomToolTip = ({ active, payload, label}) => {
-    if (active && payload && payload.length) {
+/**
+ * Box appearing with more data on charts' hover
+ * @param active
+ * @param value
+ * @return {JSX.Element|null}
+ * @constructor
+ */
+
+const CustomToolTip = ({ active, value}) => {
+    if (active && value && value.length) {
         return (
             <div className="custom-tooltip-average">
-                <p className="custom-tooltip-average-text">{`${payload[0].value} min`}</p>
+                <p className="custom-tooltip-average-text">{`${value[0].value} min`}</p>
             </div>
         )
     }
@@ -15,6 +23,10 @@ const CustomToolTip = ({ active, payload, label}) => {
 
 
 class WeeklyStats extends React.Component {
+    /**
+     *
+     * @param props fetched from API
+     */
     constructor(props) {
         super(props);
         this.data = this.props.data;
@@ -59,6 +71,10 @@ class WeeklyStats extends React.Component {
         this.newData.push(this.index8)
     }
 
+    /**
+     *
+     * @return {JSX.Element}
+     */
     render() {
         return (
             <div className="weekly-stats bottom-graph">

@@ -1,7 +1,15 @@
 import React from "react";
 import '../styles/ErrorPage.css'
 
+/**
+ * Error page if page doesn't exist
+ */
+
 class ErrorPage extends React.Component {
+    /**
+     *
+     * @return {JSX.Element}
+     */
     render() {
         return (
             <div className='error'>

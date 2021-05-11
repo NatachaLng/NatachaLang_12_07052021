@@ -5,7 +5,12 @@ import running from '../assets/menu-3.JPG';
 import weight from '../assets/menu-4.JPG';
 import '../styles/Nav.css'
 
+
+
 class Nav extends React.Component{
+    /**
+     * @return {JSX.Element}
+     */
     render() {
         return(
             <nav>

@@ -14,8 +14,15 @@ import carbsIcon from '../assets/carbs-icon.png';
 import fatIcon from '../assets/fat-icon.png';
 
 class UserPage extends React.Component {
+    /**
+     * @param props fetched from the API
+     */
     constructor(props) {
         super(props);
+        /**
+         *
+         * @type {{average: *[], dataLoaded: boolean, performance: *[], data: *[], activity: *[], activityLoaded: boolean, performanceLoaded: boolean, error: null, averageLoaded: boolean}}
+         */
         this.state = {
             error: null,
             dataLoaded: false,
@@ -29,6 +36,9 @@ class UserPage extends React.Component {
         };
     }
 
+    /**
+     * Get datas that match the user ID
+     */
     componentDidMount() {
         const userId = this.props.match.params.id;
         fetchData(userId, "")
@@ -65,6 +75,10 @@ class UserPage extends React.Component {
             })
     }
 
+    /**
+     *
+     * @return {JSX.Element}
+     */
     render() {
         return (
             <div id="main">

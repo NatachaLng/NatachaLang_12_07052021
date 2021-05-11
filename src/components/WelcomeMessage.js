@@ -3,7 +3,9 @@ import PropTypes from 'prop-types'
 import "../styles/WelcomeMessage.css"
 
 class WelcomeMessage extends React.Component {
-
+    /**
+     * @return {JSX.Element}
+     */
     render() {
         return (
             <>

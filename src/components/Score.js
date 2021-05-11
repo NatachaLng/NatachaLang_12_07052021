@@ -2,7 +2,15 @@ import React from 'react';
 import { RadialBarChart, RadialBar, PolarAngleAxis, ResponsiveContainer} from 'recharts';
 import '../styles/Score.css'
 
+/**
+ * % of the objective achieved
+ */
+
 class Score extends React.Component {
+    /**
+     *
+     * @param props fetch from the API
+     */
     constructor(props) {
         super(props);
         this.data = [{
@@ -10,6 +18,10 @@ class Score extends React.Component {
             fill: '#FF0000',
         }]
     }
+
+    /**
+     * @return {JSX.Element}
+     */
     render() {
 
         return (

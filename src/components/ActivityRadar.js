@@ -3,38 +3,44 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer} from
 import '../styles/ActivityRadar.css'
 import PropTypes from 'prop-types';
 
-
+/**
+ * Activity radar representing the type of effort
+ * @param props fetch from the API
+ */
 class ActivityRadar extends React.Component {
     constructor(props) {
         super(props);
         this.data = this.props.data;
-        this.newData = this.data.map(weekDay => {
-            switch (weekDay.kind) {
+        this.newData = this.data.map(value => {
+            switch (value.kind) {
                 case 1:
-                    return ({type: "Cardio", ...weekDay});
+                    return ({type: "Cardio", ...value});
                     break;
                 case 2:
-                    return ({type: "Energie", ...weekDay});
+                    return ({type: "Energie", ...value});
                     break;
                 case 3:
-                    return ({type: "Endurance", ...weekDay});
+                    return ({type: "Endurance", ...value});
                     break;
                 case 4:
-                    return ({type: "Force", ...weekDay});
+                    return ({type: "Force", ...value});
                     break;
                 case 5:
-                    return ({type: "Vitesse", ...weekDay});
+                    return ({type: "Vitesse", ...value});
                     break;
                 case 6:
-                    return ({type: "Intensité", ...weekDay});
+                    return ({type: "Intensité", ...value});
                     break;
                 default:
-                    return({...weekDay});
+                    return({...value});
             }
         })
 
     }
     render () {
+        /**
+         * @return HTMLElement
+         */
         return (
             <div className="activity-radar bottom-graph">
                 <ResponsiveContainer width="100%" height="100%">
