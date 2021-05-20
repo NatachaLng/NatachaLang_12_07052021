@@ -1,10 +1,10 @@
 .container{
     display: grid;
-    grid-template-areas: "header header right"
-                       "top top right"
-                       "top top right"
-                        "bottom bottom right"
-                        "bottom bottom right";
+    grid-template-areas: "header header"
+                       "top right"
+                       "top right"
+                        "bottom right"
+                        "bottom right";
     position: absolute;
     top: 110px;
     left: 190px;
@@ -26,7 +26,6 @@
     justify-content: space-between;
     margin-top: 30px;
     width: 100%;
-    min-width: 720px;
     height: 35%;
 }
 

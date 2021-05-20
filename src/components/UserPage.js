@@ -21,7 +21,10 @@ class UserPage extends React.Component {
         super(props);
         /**
          *
-         * @type {{average: *[], dataLoaded: boolean, performance: *[], data: *[], activity: *[], activityLoaded: boolean, performanceLoaded: boolean, error: null, averageLoaded: boolean}}
+         * @type {{average: *[], dataLoaded: boolean,
+         * performance: *[], data: *[],
+         * activity: *[], activityLoaded: boolean,
+         * performanceLoaded: boolean, error: null, averageLoaded: boolean}}
          */
         this.state = {
             error: null,

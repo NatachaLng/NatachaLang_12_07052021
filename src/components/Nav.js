@@ -9,6 +9,7 @@ import '../styles/Nav.css'
 
 class Nav extends React.Component{
     /**
+     * Vertical Nav Bar
      * @return {JSX.Element}
      */
     render() {

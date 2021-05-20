@@ -10,11 +10,11 @@ import '../styles/WeeklyStats.css'
  * @constructor
  */
 
-const CustomToolTip = ({ active, value}) => {
-    if (active && value && value.length) {
+const CustomToolTip = ({ active, payload}) => {
+    if (active && payload && payload.length) {
         return (
             <div className="custom-tooltip-average">
-                <p className="custom-tooltip-average-text">{`${value[0].value} min`}</p>
+                <p className="custom-tooltip-average-text">{`${payload[0].value} min`}</p>
             </div>
         )
     }

@@ -6,7 +6,6 @@ import logo from '../assets/sportsee-logo.JPG'
 /**
  * Header of the app
  */
-
 class Header extends React.Component {
     /**
      * @return {JSX.Element}

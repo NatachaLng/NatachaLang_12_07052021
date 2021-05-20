@@ -5,7 +5,6 @@ import '../styles/PersonalStat.css'
 /**
  * Personal custom stats for the user
  */
-
 class PersonalStat extends React.Component {
     /**
      * @return {JSX.Element}
