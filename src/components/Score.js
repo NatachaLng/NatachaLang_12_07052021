@@ -13,18 +13,11 @@ class Score extends React.Component {
      */
     constructor(props) {
         super(props);
-        if (this.props.data.score){
-            this.data = [{
-                percentage: this.props.data.score*100,
-                fill: '#FF0000',
-            }]
-        }
-        if (this.props.data.todayScore){
-            this.data = [{
-                percentage: this.props.data.todayScore*100,
-                fill: '#FF0000',
-            }]
-        }
+        this.data = [{
+            percentage: this.props.data.score ? this.props.data.score*100 : this.props.data.todayScore*100,
+            fill: '#FF0000',
+        }]
+
 
     }
 

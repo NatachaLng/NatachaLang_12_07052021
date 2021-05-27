@@ -13,6 +13,10 @@ import proteinIcon from '../assets/protein-icon.png';
 import carbsIcon from '../assets/carbs-icon.png';
 import fatIcon from '../assets/fat-icon.png';
 
+
+/**
+ * User page when user login
+ */
 class UserPage extends React.Component {
     /**
      * @param props fetched from the API
@@ -85,20 +89,15 @@ class UserPage extends React.Component {
     render() {
         return (
             <div id="main">
-                <Nav/>
-                <div className='container'>
-                    <div className='left-container'>
-                        <div class='top-container'>
+                <div class='container'>
                             {this.state.dataLoaded ? <WelcomeMessage firstName={this.state.data.userInfos.firstName}/> : ""}
                             {this.state.activityLoaded ? <DailyActivity data={this.state.activity.sessions}/> : ""}
-                        </div>
-                        <div className="bottom-container">
+                        <div class="bottom-container">
                             {this.state.averageLoaded ? <WeeklyStats data={this.state.average.sessions}/> : ""}
                             {this.state.performanceLoaded ? <ActivityRadar data={this.state.performance.data}/> : ""}
                             {this.state.performanceLoaded ? <Score data={this.state.data}/> : ""}
                         </div>
-                    </div>
-                    <div className='right-container'>
+                    <div class='right-container'>
                         { this.state.dataLoaded ?
                             <PersonalStat name="Calories" icon={caloriesIcon} data={this.state.data.keyData.calorieCount} unit="kCal"/>
                             : "" }
@@ -111,7 +110,6 @@ class UserPage extends React.Component {
                         { this.state.dataLoaded ?
                             <PersonalStat name="Lipides" icon={fatIcon} data={this.state.data.keyData.lipidCount} unit="g"/>
                             : "" }
-
                     </div>
                 </div>
             </div>

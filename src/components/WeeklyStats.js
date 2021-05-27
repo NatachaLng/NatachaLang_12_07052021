@@ -1,6 +1,7 @@
 import React from 'react';
 import { LineChart, Line, XAxis, Tooltip} from 'recharts';
 import '../styles/WeeklyStats.css'
+import PropTypes from "prop-types";
 
 /**
  * Box appearing with more data on charts' hover
@@ -9,7 +10,6 @@ import '../styles/WeeklyStats.css'
  * @return {JSX.Element|null}
  * @constructor
  */
-
 const CustomToolTip = ({ active, payload}) => {
     if (active && payload && payload.length) {
         return (
@@ -21,7 +21,9 @@ const CustomToolTip = ({ active, payload}) => {
     return null;
 }
 
-
+/**
+ * Activity per day of the week
+ */
 class WeeklyStats extends React.Component {
     /**
      *
@@ -90,6 +92,10 @@ class WeeklyStats extends React.Component {
             </div>
         )
     }
+}
+
+WeeklyStats.propTypes = {
+
 }
 
 export default WeeklyStats;

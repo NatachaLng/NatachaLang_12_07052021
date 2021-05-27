@@ -39,6 +39,7 @@ class ActivityRadar extends React.Component {
     }
     render () {
         /**
+         * Radar from Rechart
          * @return HTMLElement
          */
         return (

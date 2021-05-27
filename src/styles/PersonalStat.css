@@ -1,17 +1,17 @@
 .personal-stat {
     width: 80%;
-    max-width: 250px;
+    min-width: 250px;
     height: 124px;
     background-color: #FBFBFB;
     border-radius: 5px;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .personal-stat-icon {
     width: 60px;
     height: 60px;
+    margin-left: 20px;
 }
 
 .personal-stat-text {
@@ -28,4 +28,11 @@
     font-size: 14px;
     font-weight: 500;
     margin-top: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+    .personal-stat {
+        min-width: 200px;
+        width: 200px;
+    }
 }

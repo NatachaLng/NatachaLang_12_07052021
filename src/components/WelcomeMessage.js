@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import "../styles/WelcomeMessage.css"
 
+/**
+ * Welcome message on the app
+ */
 class WelcomeMessage extends React.Component {
     /**
      * @return {JSX.Element}
