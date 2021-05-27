@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# SportsApp User Dashboard
 
+Dashboard for the users of Sportsee, an app helping you getting in shape. Datas were fetched from an external NodeJS server.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Prerequesites
 
-In the project directory, you can run:
+You need [NodeJS](https://nodejs.org/en/)installed on your machine
+You need [Git](https://git-scm.com/) to clone this repository
 
-### `yarn start`
+## Dependencies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[React](https://reactjs.org/) v17.0.1
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[recharts](https://recharts.org/en-US) v2.0.9
 
-### `yarn test`
+[react-router-dom](https://reactrouter.com/web/guides/quick-start) v5.2.0
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[prop-types](https://www.npmjs.com/package/prop-types) v15.7.2
 
-### `yarn build`
+## Getting started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Install the micro API
+Fork this [repository](https://github.com/NatachaLng/reactExpres12) on your computer
+Clone it on your computer.
+The yarn command will allow you to install the dependencies.
+The yarn dev command will allow you to run the micro API.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+If you need more information, please refer to the following [Readme](https://github.com/gndz07/P9-front-end-dashboard#readme)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Get the project
 
-### `yarn eject`
+Clone this [repository](https://github.com/NatachaLng/NatachaLang_P12_07052021) on your computer. The micro API and the project MUST be in the same folder
+Go to the project folder cd NatachaLang_P12_07052021
+Install all dependencies of you need for run this project npm install
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Run the project
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Go to the project cd NatachaLang_P12_07052021
+Launch the command npm run dev, the micro API and the app will be launched simutaneously
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ## Learn More
+For the time being, only two users available, with URL for each:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    http://localhost:3000/user/12
+    http://localhost:3000/user/18
