@@ -8,6 +8,7 @@ import logo from '../assets/sportsee-logo.JPG'
  */
 class Header extends React.Component {
     /**
+     * Get HTML
      * @return {JSX.Element}
      */
     render() {

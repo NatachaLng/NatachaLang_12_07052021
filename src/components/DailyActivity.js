@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import '../styles/DailyActivity.css';
 
 /**
- *
+ * Tooltip of the chart
  * @param active (if exists)
  * @param value
  * @return {JSX.Element|null}
@@ -25,7 +25,7 @@ const CustomToolTip = ({ active, payload}) => {
 
 
 /**
- * Graph representig the activity per day
+ * Graph representing the activity per day
  */
 class DailyActivity extends React.Component {
 

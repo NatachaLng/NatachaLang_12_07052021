@@ -7,6 +7,7 @@ import "../styles/WelcomeMessage.css"
  */
 class WelcomeMessage extends React.Component {
     /**
+     * Get HTML
      * @return {JSX.Element}
      */
     render() {

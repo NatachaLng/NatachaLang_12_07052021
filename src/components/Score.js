@@ -8,7 +8,7 @@ import '../styles/Score.css'
 
 class Score extends React.Component {
     /**
-     *
+     * Get datas
      * @param props fetch from the API
      */
     constructor(props) {
@@ -22,6 +22,7 @@ class Score extends React.Component {
     }
 
     /**
+     * Get HTML
      * @return {JSX.Element}
      */
     render() {

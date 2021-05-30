@@ -7,6 +7,7 @@ import '../styles/PersonalStat.css'
  */
 class PersonalStat extends React.Component {
     /**
+     * Get HTML
      * @return {JSX.Element}
      */
     render() {

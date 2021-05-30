@@ -1,7 +1,6 @@
 import React from "react";
 import '../styles/UserPage.css'
 import fetchData from "../service/fetch";
-import Nav from "./Nav";
 import WelcomeMessage from "./WelcomeMessage";
 import DailyActivity from "./DailyActivity";
 import WeeklyStats from "./WeeklyStats";
@@ -83,21 +82,21 @@ class UserPage extends React.Component {
     }
 
     /**
-     *
+     * Get HTML
      * @return {JSX.Element}
      */
     render() {
         return (
             <div id="main">
-                <div class='container'>
+                <div className='container'>
                             {this.state.dataLoaded ? <WelcomeMessage firstName={this.state.data.userInfos.firstName}/> : ""}
                             {this.state.activityLoaded ? <DailyActivity data={this.state.activity.sessions}/> : ""}
-                        <div class="bottom-container">
+                        <div className="bottom-container">
                             {this.state.averageLoaded ? <WeeklyStats data={this.state.average.sessions}/> : ""}
                             {this.state.performanceLoaded ? <ActivityRadar data={this.state.performance.data}/> : ""}
                             {this.state.performanceLoaded ? <Score data={this.state.data}/> : ""}
                         </div>
-                    <div class='right-container'>
+                    <div className='right-container'>
                         { this.state.dataLoaded ?
                             <PersonalStat name="Calories" icon={caloriesIcon} data={this.state.data.keyData.calorieCount} unit="kCal"/>
                             : "" }
