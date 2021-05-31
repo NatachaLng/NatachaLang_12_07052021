@@ -25,7 +25,7 @@ You need [Git](https://git-scm.com/) to clone this repository
 ### Install the micro API
 Fork this [repository](https://github.com/NatachaLng/reactExpres12) on your computer
 Clone it on your computer.
-The `yarn command` will allow you to install the dependencies.
+The `yarn` command will allow you to install the dependencies.
 The `yarn dev` command will allow you to run the micro API.
 
 If you need more information, please refer to the following [Readme](https://github.com/gndz07/P9-front-end-dashboard#readme)
