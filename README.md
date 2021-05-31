@@ -5,7 +5,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Prerequesites
 
-You need [NodeJS](https://nodejs.org/en/)installed on your machine
+You need [NodeJS](https://nodejs.org/en/) installed on your machine
 You need [Git](https://git-scm.com/) to clone this repository
 
 ## Dependencies
@@ -25,21 +25,21 @@ You need [Git](https://git-scm.com/) to clone this repository
 ### Install the micro API
 Fork this [repository](https://github.com/NatachaLng/reactExpres12) on your computer
 Clone it on your computer.
-The yarn command will allow you to install the dependencies.
-The yarn dev command will allow you to run the micro API.
+The `yarn command` will allow you to install the dependencies.
+The `yarn dev` command will allow you to run the micro API.
 
 If you need more information, please refer to the following [Readme](https://github.com/gndz07/P9-front-end-dashboard#readme)
 
 ### Get the project
 
 Clone this [repository](https://github.com/NatachaLng/NatachaLang_P12_07052021) on your computer. The micro API and the project MUST be in the same folder
-Go to the project folder cd NatachaLang_P12_07052021
-Install all dependencies of you need for run this project npm install
+Go to the project folder `cd NatachaLang_P12_07052021`
+Install all dependencies of you need for run this project `npm i`
 
 ### Run the project
 
-Go to the project cd NatachaLang_P12_07052021
-Launch the command npm run dev, the micro API and the app will be launched simutaneously
+Go to the project `cd NatachaLang_P12_07052021`
+Launch the command `npm run dev`, the micro API and the app will be launched simutaneously
 
 
 ## Learn More
