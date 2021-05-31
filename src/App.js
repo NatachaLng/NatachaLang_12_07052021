@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import "./styles/Index.css"
 import './styles/Header.css';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import ErrorPage from "./components/ErrorPage";
