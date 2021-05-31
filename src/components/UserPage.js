@@ -15,6 +15,7 @@ import fatIcon from '../assets/fat-icon.png';
 
 /**
  * User page when user login
+ * Initial state condition is empty, fill with data fetched from the backend.
  */
 class UserPage extends React.Component {
     /**
@@ -43,10 +44,14 @@ class UserPage extends React.Component {
     }
 
     /**
-     * Get datas that match the user ID
+     * Wait until all components are mounted to call the API.
+     * Look for user ID match and fetch the datas with the matching ID.
+     * @async
      */
     componentDidMount() {
         const userId = this.props.match.params.id;
+
+        //fetch user's data
         fetchData(userId, "")
             .then(data => {
                 this.setState({
@@ -56,6 +61,7 @@ class UserPage extends React.Component {
                 })
             })
 
+        //fetch user's data activity
         fetchData(userId, "activity")
             .then(data => {
                 this.setState({
@@ -64,6 +70,7 @@ class UserPage extends React.Component {
                 })
             })
 
+        //fetch user's data average session
         fetchData(userId, "average-sessions")
             .then(data => {
                 this.setState({
@@ -72,6 +79,7 @@ class UserPage extends React.Component {
                 })
             })
 
+        //fetch user's data performance
         fetchData(userId, "performance")
             .then(data => {
                 this.setState({

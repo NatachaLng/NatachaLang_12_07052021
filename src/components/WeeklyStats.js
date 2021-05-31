@@ -94,8 +94,10 @@ class WeeklyStats extends React.Component {
     }
 }
 
+export default WeeklyStats;
+
 WeeklyStats.propTypes = {
     newData: PropTypes.array
 }
 
-export default WeeklyStats;
+

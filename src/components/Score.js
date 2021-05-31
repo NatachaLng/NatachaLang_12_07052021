@@ -1,6 +1,8 @@
 import React from 'react';
 import { RadialBarChart, RadialBar, PolarAngleAxis, ResponsiveContainer} from 'recharts';
 import '../styles/Score.css'
+import PropTypes from "prop-types";
+import WeeklyStats from "./WeeklyStats";
 
 /**
  * % of the objective achieved
@@ -47,3 +49,8 @@ class Score extends React.Component {
     }
 }
 export default Score;
+
+Score.propTypes = {
+    data: PropTypes.array,
+    percentage: PropTypes.number
+}
