@@ -18,6 +18,8 @@ You need [Git](https://git-scm.com/) to clone this repository
 
 [prop-types](https://www.npmjs.com/package/prop-types) v15.7.2
 
+[concurrently](https://www.npmjs.com/package/concurrently)
+
 ## Getting started
 
 ### Install the micro API
