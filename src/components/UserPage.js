@@ -1,6 +1,7 @@
 import React from "react";
 import '../styles/UserPage.css'
 import fetchData from "../service/fetch";
+import  { Redirect } from 'react-router-dom'
 import WelcomeMessage from "./WelcomeMessage";
 import DailyActivity from "./DailyActivity";
 import WeeklyStats from "./WeeklyStats";
@@ -54,11 +55,15 @@ class UserPage extends React.Component {
         const averageLoaded = this.state.averageLoaded
         const dataLoaded = this.state.dataLoaded;
         const performanceLoaded = this.state.performanceLoaded
+        const data = this.state.data
 
-        if (activityLoaded && averageLoaded && dataLoaded && performanceLoaded) {
+        if (data == undefined){
+            return <Redirect to='*'  />}
+        else if (activityLoaded && averageLoaded && dataLoaded && performanceLoaded) {
             this.setState({isLoading: false})
         }
     }
+
 
 
     /**
@@ -109,7 +114,6 @@ class UserPage extends React.Component {
                 })
                 this.handleChange();
             })
-
 
     }
 
