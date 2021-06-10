@@ -46,6 +46,9 @@ class UserPage extends React.Component {
         };
     }
 
+    /**
+     * to change the state of isLoading and remove the loading spinner
+     */
     handleChange() {
         const activityLoaded = this.state.activityLoaded;
         const averageLoaded = this.state.averageLoaded
